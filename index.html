@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+
+  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <hr>
+  <div class="employee-form">
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+      <div>
+        <label>Nom</label><label class="validation-error hide" id="fullNameValidationError">This field is
+          required.</label>
+        <input type="text" name="fullName" id="fullName">
+      </div>
+      <div>
+        <label>prenom</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div>
+        <label>matricule</label>
+        <input type="text" name="salary" id="salary">
+      </div>
+      <div>
+        <label>City</label>
+        <input type="text" name="city" id="city">
+      </div>
+      <div class="form-action-buttons">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <br />
+  <div class="employees-table">
+    <table class="list" id="employeeList">
+      <thead>
+        <tr>
+          <th>nom</th>
+          <th>prenom</th>
+          <th>matricule</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
